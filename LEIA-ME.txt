@@ -1,0 +1,6 @@
+EB DO TG — VERSÃO 2
+Abra index.html para visualizar o site no navegador.
+O ZIP contém index.html, style.css e app.js.
+
+Esta é uma demonstração front-end: o login apenas aceita um nome Roblox localmente; não valida a conta, não salva dados em servidor e não sincroniza jogadores. Não peça nem armazene senhas Roblox. Para autenticação real, backend, banco de dados, permissões e integração com Roblox, será necessária uma segunda etapa técnica.
+A tabela CDP reproduz os tempos informados. Cadete aparece na CDP, embora não esteja na hierarquia enviada.

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EB DO TG | Central Militar</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="crest">EB</div><div><b>EB DO TG</b><small>CENTRAL MILITAR</small></div><button id="close" class="close">×</button></div>
+ <div class="menu-title">EB DO TG</div>
+ <button class="nav selected" data-page="home"><i>⌂</i>Página inicial</button>
+ <button class="nav" data-page="cdp"><i>◷</i>Capacitação (CDP)</button>
+ <div class="menu-title">CONSULTA</div>
+ <button class="nav" data-page="hierarquia"><i>♜</i>Hierarquia</button>
+ <button class="nav" data-page="divisoes"><i>⬡</i>Divisões</button>
+ <button class="nav" data-page="historico"><i>▤</i>Histórico militar</button>
+ <button class="nav" data-page="ranking"><i>♛</i>Rankings</button>
+ <div class="menu-title">LOJA</div>
+ <button class="nav" data-page="loja"><i>▣</i>Loja</button>
+ <button class="nav" data-page="titulos"><i>✦</i>Títulos</button>
+ <div class="side-bottom"><span class="live"></span> Sistema demonstrativo <button id="logout">Sair</button></div>
+</aside>
+<main>
+<header><button id="open" class="hamb">☰</button><div class="crumb">EB DO TG <span>/</span> <b id="crumb">Página inicial</b></div><div class="user"><div class="mini-avatar" id="avatar">V</div><div><b id="userName">Visitante</b><small id="userRank">Não verificado</small></div></div></header>
+<div class="wrap">
+<section id="login" class="login">
+ <div class="login-card"><div class="crest big">EB</div><div class="tag">ACESSO AO SISTEMA</div><h1>Central do <em>EB DO TG</em></h1><p>Entre com seu usuário Roblox para visualizar o painel militar.</p>
+ <label>Usuário Roblox</label><input id="roblox" placeholder="Ex.: UsuarioRoblox">
+ <label>Código temporário de BIO</label><div class="inline"><input id="code" value="EBTG-8F2K" readonly><button id="copy" class="btn secondary">Copiar</button></div>
+ <small class="note">Demonstração: a validação Roblox ainda não está conectada. Nunca informe sua senha Roblox.</small>
+ <button id="enter" class="btn primary wide">Entrar na demonstração <span>→</span></button>
+ </div>
+</section>
+<section id="home" class="page hidden">
+ <div class="hero"><div><div class="tag">CENTRO DE OPERAÇÕES</div><h1>Bem-vindo, <em id="welcome">militar</em></h1><p>Gerencie sua carreira e acompanhe as atividades do EB DO TG.</p></div><div class="hero-mark">EB<span>✦</span></div></div>
+ <div class="cards">
+ <div class="metric"><div class="metric-icon gold">♜</div><small>Militares cadastrados</small><strong>128</strong><span>Base ilustrativa</span></div>
+ <div class="metric"><div class="metric-icon blue">↗</div><small>Promoções registradas</small><strong>46</strong><span>Base ilustrativa</span></div>
+ <div class="metric"><div class="metric-icon green">✚</div><small>Treinamentos</small><strong>32</strong><span>Base ilustrativa</span></div>
+ <div class="metric"><div class="metric-icon purple">★</div><small>Patentes</small><strong>23</strong><span>Hierarquia cadastrada</span></div>
+ </div>
+ <div class="columns">
+ <article class="panel"><div class="panel-head"><div><div class="tag">DADOS DO MILITAR</div><h2>Minha ficha</h2></div><span class="status">ATIVO</span></div><div class="person"><div class="person-avatar" id="personAvatar">?</div><div><b id="personName">Visitante</b><small id="personRank">[REC] Recruta</small></div></div><div class="facts"><div><small>Usuário Roblox</small><b id="personUser">—</b></div><div><small>Patente atual</small><b>[REC] Recruta</b></div><div><small>Tempo na patente</small><b id="elapsed">0h 00min</b></div><div><small>CDP</small><b id="ready">3h necessárias</b></div></div><button class="btn secondary" data-go="cdp">Ver capacitação</button></article>
+ <article class="panel"><div class="panel-head"><div><div class="tag">ACESSO RÁPIDO</div><h2>Atalhos</h2></div></div><div class="quick"><button data-go="hierarquia"><span class="quick-icon">♜</span><span><b>Hierarquia</b><small>Consultar patentes</small></span><strong>›</strong></button><button data-go="ranking"><span class="quick-icon blue">♛</span><span><b>Rankings</b><small>Ver desempenho</small></span><strong>›</strong></button><button data-go="historico"><span class="quick-icon green">▤</span><span><b>Histórico</b><small>Movimentações militares</small></span><strong>›</strong></button></div></article>
+ </div>
+ <div class="alert"><b>ⓘ Versão de demonstração</b><span>Os números são ilustrativos. Login Roblox, salvamento permanente e integração com o jogo serão conectados na próxima etapa.</span></div>
+</section>
+<section id="inner" class="page hidden"><div class="page-head"><div class="tag">CENTRAL MILITAR · EB DO TG</div><h1 id="title">Hierarquia</h1><p id="desc"></p></div><div id="body"></div></section>
+</div><footer>EB DO TG <span>•</span> Central Militar <span class="foot-right">Interface demonstrativa</span></footer>
+</main></div><div id="toast"></div><script src="app.js"></script></body></html>
